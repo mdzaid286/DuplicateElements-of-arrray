@@ -1,0 +1,25 @@
+public class DulipcateElements {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 int[] arr = { 1, 2, 3, 4, 8, 5, 6 };
+
+	      System.out.println(checkForDuplicates(arr));
+
+
+	}
+
+	private static int checkForDuplicates(int[] arr) {
+		// TODO Auto-generated method stub
+		for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    return arr[i]; // Found a duplicate element.
+                }
+            }
+        }
+
+        return -1; 
+	}
+
+}
